@@ -111,10 +111,8 @@ function LoginPage() {
     return errors;
   };
   const onSubmit = (values) => {
-    const { API_URL } = process.env;
-
     const client = axios.create({
-      baseURL: `${API_URL}`,
+      baseURL: `https://instagrampoweredbackend.herokuapp.com`,
       timeout: 1000,
     });
 
