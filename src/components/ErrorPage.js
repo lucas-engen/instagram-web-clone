@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Typography from '@material-ui/core/Typography';
+import Typography from "@material-ui/core/Typography";
 
 export default function ErrorPage() {
   return (
@@ -13,7 +13,7 @@ export default function ErrorPage() {
         The link you followed may be broken, or the page may have been removed.
         <Link to="/">
           <Typography color="primary" component="span">
-            {' Go back to Instaclone.'}
+            {" Go back to Instagram."}
           </Typography>
         </Link>
       </Typography>
