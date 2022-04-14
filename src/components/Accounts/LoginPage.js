@@ -111,8 +111,10 @@ function LoginPage() {
     return errors;
   };
   const onSubmit = (values) => {
+    const { API } = process.env;
+
     const client = axios.create({
-      baseURL: "http://localhost:4040",
+      baseURL: `${API}`,
       timeout: 1000,
     });
 
