@@ -111,10 +111,10 @@ function LoginPage() {
     return errors;
   };
   const onSubmit = (values) => {
-    const { API } = process.env;
+    const { API_URL } = process.env;
 
     const client = axios.create({
-      baseURL: `${API}`,
+      baseURL: `${API_URL}`,
       timeout: 1000,
     });
 
